@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+    <div class="container">
+        <a href="{{ path('todo_list') }}" class="navbar-brand">MY TODO</a>
+        <button type="button" data-toggle="collapse" data-target="#mobile-nav"
+                class="navbar-toggler">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobile-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="{{ path('todo_list') }}" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('new_todo') }}" class="nav-link active">New Todo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
